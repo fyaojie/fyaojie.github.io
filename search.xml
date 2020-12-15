@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>iPhone等比例适配UI</title>
+      <link href="2020/12/15/iPhone%E7%AD%89%E6%AF%94%E4%BE%8B%E9%80%82%E9%85%8DUI/"/>
+      <url>2020/12/15/iPhone%E7%AD%89%E6%AF%94%E4%BE%8B%E9%80%82%E9%85%8DUI/</url>
+      
+        <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>iPhone 屏幕比例</p><p>| 第几代  |   手机型号  |   屏幕尺寸(英寸)  |   分辨率(像素)  |   屏幕密度(ppi)  |   开发尺寸(pt)  |   倍图    屏幕比例 |<br>1    iPhone 2G    3.5    320<em>480        320</em>480        3:2<br>2    iPhone 3G    3.5    320<em>480        320</em>480        3:2<br>3    iPhone 3GS    3.5    320<em>480        320</em>480        3:2<br>4    iPhone 4    3.5    960<em>640    326    320</em>480    2    3:2<br>5    iPhone 4s    3.5    960<em>640    326    320</em>480    2    3:2<br>6    iPhone 5    4    1136<em>640    326    320</em>568    2    16:9<br>7    iPhone 5s     4    1136<em>640    326    320</em>568    2    16:9<br>    iPhone 5c    4    1136<em>640    326    320</em>568    2    16:9<br>8    iPhone 6    4.7    1334<em>750    326    375</em>667    2    16:9<br>    iPhone 6 Plus    5.5    1920<em>1080    401    414</em>736    3    16:9<br>9    iPhone 6s    4.7    1334<em>750    326    375</em>667    2    16:9<br>    iPhone 6s Plus    5.5    1920<em>1080    401    414</em>736    3    16:9<br>10    iPhone 7    4.7    1334<em>750    326    375</em>667    2    16:9<br>    iPhone 7 Plus    5.5    1920<em>1080    401    414</em>736    3    16:9<br>11    iPhone 8    4.7    1334<em>750    326    375</em>667    2    16:9<br>    iPhone 8 Plus    5.5    1920<em>1080    401    414</em>736    3    16:9<br>    iPhone X    5.8    2436<em>1125    458    375</em>812    3    19.5：9<br>12    iPhone XS    5.8    2436<em>1125    458    375</em>812    3    19.5：9<br>    iPhone XR    6.1    828<em>1792    326    414</em>896    2    19.5：9<br>    iPhone XS Max    6.5    2688<em>1242    458    414</em>896    3    19.5：9<br>13    iPhone 12    6.1    2532<em>1170    460    390</em>844    3    19.5：9<br>    iPhone 12 mini    5.4    2340<em>1080    476    375</em>812    3    19.5：9<br>    iPhone 12 Pro&nbsp;Max    6.7    2778<em>1284    458    428</em>926    3    19.5：9<br>    iPhone 12 Pro    6.1    2532<em>1170    460    390</em>844    3    19.5：9</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="2020/12/11/test/"/>
       <url>2020/12/11/test/</url>
