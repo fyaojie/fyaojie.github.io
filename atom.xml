@@ -6,7 +6,7 @@
   <link href="http://fyaojie.github.io/atom.xml" rel="self"/>
   
   <link href="http://fyaojie.github.io/"/>
-  <updated>2021-08-03T08:55:37.476Z</updated>
+  <updated>2021-09-24T02:46:04.172Z</updated>
   <id>http://fyaojie.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NSString为什么用copy修饰</title>
+    <link href="http://fyaojie.github.io/2021/09/24/NSString%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8copy%E4%BF%AE%E9%A5%B0/"/>
+    <id>http://fyaojie.github.io/2021/09/24/NSString%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8copy%E4%BF%AE%E9%A5%B0/</id>
+    <published>2021-09-24T02:04:09.000Z</published>
+    <updated>2021-09-24T02:46:04.172Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#import "ViewController.h"</span><br><span class="line"></span><br><span class="line">@interface ViewController ()</span><br><span class="line">@property (nonatomic, copy) NSString *strCopy;</span><br><span class="line">@property (nonatomic, strong) NSString *strStrong;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">@implementation ViewController</span><br><span class="line"></span><br><span class="line">- (void)viewDidLoad {</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    </span><br><span class="line">    NSMutableString *mustr = [NSMutableString string];</span><br><span class="line">    [mustr appendString:@"111"];</span><br><span class="line"></span><br><span class="line">    self.strCopy = mustr;</span><br><span class="line">    self.strStrong = mustr;</span><br><span class="line"></span><br><span class="line">    [mustr appendString:@"222"];</span><br><span class="line"></span><br><span class="line">    NSLog(@"%p=%@", self.strCopy, self.strCopy);</span><br><span class="line">    NSLog(@"%p=%@", self.strStrong, self.strStrong);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></tbody></table></figure><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2021-09-24 10:33:07.083204+0800 demo[78267:292204] 0xb7d524a56d043a87=111</span><br><span class="line">2021-09-24 10:33:07.083287+0800 demo[78267:292204] 0x6000033c9740=111222</span><br></pre></td></tr></tbody></table></figure><p>copy作为修饰符时,对该变量进行赋值,如果新对象是可变对象则会进行深copy,新对象是不可变对象则会进行浅copy</p><p>因此<br>    <em>self.strCopy = mustr;</em> 会进行一次深copy,产生新的对象并进行赋值,<br>    <em>self.strStrong = mustr;</em> 则会直接将当前对象的指针进行赋值,也就是该对象类型实际上已经改变为了NSMutableString类型</p><p>验证方式:<br>    </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[self.strCopy performSelector:@selector(appendString:) withObject:@"333"];</span><br><span class="line">结果是崩溃,找不到方法</span><br><span class="line"></span><br><span class="line">[self.strStrong performSelector:@selector(appendString:) withObject:@"333"];</span><br><span class="line">成功加入新字符串,并输出111222333</span><br></pre></td></tr></tbody></table></figure><p></p><p>综上所述:<br>    使用copy修饰符修饰不可变对象NSString,可以避免类型改变</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;spa</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>正则表达式</title>
