@@ -6,7 +6,7 @@
   <link href="http://fyaojie.github.io/atom.xml" rel="self"/>
   
   <link href="http://fyaojie.github.io/"/>
-  <updated>2021-09-24T02:46:04.172Z</updated>
+  <updated>2021-10-08T01:23:40.598Z</updated>
   <id>http://fyaojie.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搜索引擎技巧</title>
+    <link href="http://fyaojie.github.io/2021/10/08/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%8A%80%E5%B7%A7/"/>
+    <id>http://fyaojie.github.io/2021/10/08/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-10-08T01:01:58.000Z</published>
+    <updated>2021-10-08T01:23:40.598Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>搜索引擎优化技巧</th><th>描述</th><th>百度</th><th>谷歌</th></tr></thead><tbody><tr><td>双引号</td><td>把需要搜索词放在双引号中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。例如搜索： “搜索引擎”。</td><td>支持</td><td>支持</td></tr><tr><td>减号</td><td>减号代表搜索的结果不包含减号后面的词的页面。使用这个指令时减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词。例如：搜索 -引擎，返回的则是包含“搜索”这个词，却不包含“引擎”这个词的结果。</td><td>支持</td><td>支持</td></tr><tr><td>星号</td><td>星号*是比较常用的通配符，也可以用在搜索中。比如在Google 中搜索：搜索*擎。其中的*号代表任何文字。返回的结果就不仅包含“搜索引擎”，还包含了“搜索收擎”，“搜索巨擎”等内容</td><td>不支持</td><td>支持</td></tr><tr><td>inurl</td><td>inurl: 指令用于搜索查询词出现在url中的页面。inurl 指令支持中文和英文。比如搜索：inurl:搜索引擎优化返回的结果都是网址url 中包含“搜索引擎优化”的页面。由于关键词出现在url 中对排名有一定影响，使用inurl:搜索可以更准确地找到竞争对手。</td><td>支持</td><td>支持</td></tr><tr><td>inanchor</td><td>inanchor:指令返回的结果是导入链接锚文字中包含搜索词的页面。比如在Google 搜索 ：inanchor:点击这里返回的结果页面本身并不一定包含“点击这里”这四个字，而是指向这些页面的链接锚文字中出现了“点击这里”这四个字。可以用来找到某个关键词的竞争对收，而且这些竞争对手往往是做过SEO 的。研究竞争对手页面有哪些外部链接，就可以找到很多链接资源。</td><td>不支持</td><td>支持</td></tr><tr><td>intitle</td><td>intitle: 指令返回的是页面title 中包含关键词的页面。使用intitle 指令找到的文件是更准确的竞争页面。如果关键词只出现在页面可见文字中，而没有出现在title 中，大部分情况是并没有针对关键词进行优化，所以也不是有力的竞争对手。</td><td>支持</td><td>支持</td></tr><tr><td>allintitle</td><td>allintitle:搜索返回的是页面标题中包含多组关键词的文件。例如 ：allintitle:SEO 搜索引擎优化。就相当于：intitle:SEO intitle:搜索引擎优化，返回的是标题中中既包含“SEO”，也包含“搜索引擎优化”的页面</td><td>—</td><td>—</td></tr><tr><td>allinurl</td><td>与allintitle: 类似。allinurl:SEO 搜索引擎优化相当于 ：inurl:SEO inurl:搜索引擎优化</td><td>—</td><td>—</td></tr><tr><td>filetype</td><td>用于搜索特定文件格式。比如搜索filetype:pdf SEO，返回的就是包含SEO 这个关键词的所有pdf 文件。</td><td>支持</td><td>支持</td></tr><tr><td>site</td><td>site:是SEO 最熟悉的高级搜索指令，用来搜索某个域名下的所有文件。</td><td>—</td><td>—</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;搜索引擎优化技巧&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;th&gt;百度&lt;/th&gt;
+&lt;th&gt;谷歌&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;双引号&lt;/td&gt;
+&lt;td&gt;把需要搜索词放在双引号中，代表完全匹配搜索</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>NSString为什么用copy修饰</title>
